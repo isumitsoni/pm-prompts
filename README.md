@@ -12,11 +12,11 @@ A practical prompt library for Product Managers who are building AI products, no
 - [01-discovery](./01-discovery) — JTBD synthesis, problem framing, ICP clarity, friction mapping
 - [02-strategy](./02-strategy) — Opportunity sizing, competitive positioning, north star metrics
 - [03-execution](./03-execution) — PRD drafting, sprint scope, dependency risks, launch readiness
-- [04-stakeholder](./04-stakeholder) — Executive updates, alignment maps, objection handling
+- [04-stakeholder — Stakeholder Management](./04-stakeholder) — Executive updates, alignment maps, objection handling
 - [05-data-and-metrics](./05-data-and-metrics) — KPI diagnosis, experiment readouts, retention analysis
-- [06-ai-feature-spec](./06-ai-feature-spec) — AI spec building, prompt contracts, evals, cost/latency tradeoffs
+- [06-ai-feature-spec — AI Feature Specs](./06-ai-feature-spec) — AI spec building, prompt contracts, evals, release gates, pricing
 - [07-communication](./07-communication) — Launch posts, release notes, FAQs, LinkedIn angles
-- [08-career](./08-career) — Resume rewrites, case studies, interview practice, networking
+- [08-career — AI PM Career](./08-career) — Resume rewrites, case studies, interview practice, networking
 
 ## Contributing
 Open PRs are welcome. Add prompts that solve real PM problems with enough context to run in production PM workflows.

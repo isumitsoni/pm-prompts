@@ -1,6 +1,6 @@
-# AI Feature Spec Prompts
+# AI Feature Specs Prompts
 
-The highest-signal category. Prompts for speccing, evaluating, and shipping AI features with production discipline.
+The highest-signal category. Prompts for speccing, evaluating, pricing, and shipping AI features with production discipline.
 
 ---
 
@@ -139,3 +139,96 @@ Use practical assumptions and show where uncertainty is high.
 **Tips:**
 - Separate first-token latency from full completion latency for UX decisions.
 - Consider tiered model routing based on task complexity.
+
+---
+
+## Go/No-Go Release Gate for AI Feature
+
+**Use case:** Run a final release decision when evals, safety, reliability, and business goals conflict.
+**Input needed:** Eval results, incident history, SLA status, cost metrics, stakeholder constraints.
+
+---
+
+You are an AI PM release board advisor. Evaluate whether this AI feature should move from [alpha/beta] to [beta/GA].
+
+Use this decision framework:
+1. Quality gate: check rubric scores and regression results.
+2. Safety gate: check policy violations and unresolved high-severity risks.
+3. Reliability gate: check latency, error rates, and rollback readiness.
+4. Business gate: check expected impact vs operating cost.
+5. Support gate: check support readiness and escalation coverage.
+
+Output format:
+- Gate scorecard (Pass / Conditional / Fail for each gate)
+- Overall decision (Go / Conditional Go / No-Go)
+- Required conditions before re-review
+- Stakeholder message draft (short)
+
+Rules:
+- If any critical safety gate fails, default to No-Go.
+- Mark missing evidence explicitly.
+
+---
+
+**Tips:**
+- Use this in every stage transition meeting to avoid subjective launch calls.
+- Archive each scorecard so future incidents can be traced to decisions.
+
+---
+
+## AI Feature Pricing & Packaging Simulator
+
+**Use case:** Decide pricing and plan packaging for AI features with variable model costs.
+**Input needed:** Cost per request, usage patterns, value metric, current pricing tiers, margin targets.
+
+---
+
+Act as a PM + pricing strategist. Build 3 pricing/packaging options for this AI feature.
+
+For each option include:
+1. Packaging model (included quota / add-on / usage-based / hybrid).
+2. Unit economics estimate (best/base/worst case).
+3. User behavior risks (overuse, underuse, churn triggers).
+4. Recommended guardrails (rate limits, fair-use caps, tier routing).
+5. GTM messaging angle.
+
+Then recommend one option with rationale and a 30-day validation test plan.
+
+Constraints:
+- Prioritize margin durability and perceived fairness.
+- Avoid pricing complexity users cannot understand.
+
+---
+
+**Tips:**
+- Test packaging with 2–3 customer segments before broad launch.
+- Pair with telemetry alerts so margin issues are caught in week one.
+
+---
+
+## AI Incident Triage & User Comms Commander
+
+**Use case:** Handle live AI feature incidents — quality drop, hallucinations, latency spikes — with clear execution and communication.
+**Input needed:** Incident symptoms, scope, impacted users, known root-cause hypotheses, current mitigations.
+
+---
+
+You are my incident commander for an AI product incident.
+
+Generate:
+1. 60-minute action plan (containment first).
+2. Triage checklist by function (Product, Engineering, Support, Comms).
+3. User-impact severity classification.
+4. Internal status update template (exec + cross-functional).
+5. External user update template (transparent but safe).
+6. Recovery criteria and post-incident follow-up actions.
+
+Rules:
+- Prioritize user harm reduction over feature availability.
+- If cause is unknown, communicate uncertainty clearly with next update time.
+
+---
+
+**Tips:**
+- Pre-fill this prompt in your runbook so it can be used under pressure.
+- Always include the next update timestamp in public incident messages.
