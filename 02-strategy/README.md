@@ -138,3 +138,75 @@ Output should be practical for a planning meeting.
 **Tips:**
 - Include explicit "what we are saying no to" lines to reduce ambiguity.
 - Use this with engineering estimates, not in isolation.
+
+---
+
+## Lost Deal / No-Decision Analyzer
+
+**Use case:** Find product and messaging gaps by analyzing prospects who said no or never moved.
+**Input needed:** Lost deal notes, sales call summaries, objection themes, segment info, pricing context.
+
+---
+
+Act as a PM helping me learn from lost deals and no-decision outcomes.
+
+Analyze the context and return:
+1. The top 5 reasons prospects did not move forward
+2. Which reasons are product gaps vs trust gaps vs buying-process issues
+3. A frequency and severity table
+4. The most likely "missing proof" that would have changed the conversation
+5. 3 product or GTM experiments to test in the next 30 days
+6. A short summary for leadership with:
+   - What we should fix now
+   - What we should validate first
+   - What we should ignore for now
+
+Constraints:
+- Use only the evidence in the notes
+- Mark low-confidence conclusions clearly
+- Do not treat one loud prospect as a market signal without support
+
+---
+
+**Tips:**
+- This works especially well after a founder-led sales sprint.
+- Separate "not a fit" from "did not trust us yet" before changing roadmap direction.
+
+---
+
+## AI Build vs Buy Decision Memo
+
+**Use case:** Decide whether to build an AI capability in-house, use a vendor, or hybridize.
+**Input needed:** Use case, user importance, timeline, data sensitivity, budget, internal capabilities, vendor options.
+
+---
+
+You are my strategic PM advisor. Help me decide whether to build, buy, or take a hybrid approach for this AI capability.
+
+Return the answer in this format:
+1. Decision summary
+2. Option table with:
+   - Build
+   - Buy
+   - Hybrid
+3. Score each option on:
+   - Time to launch
+   - User experience control
+   - Cost predictability
+   - Data/privacy risk
+   - Differentiation potential
+   - Long-term flexibility
+4. Recommend one option and explain the tradeoffs
+5. List the top 3 assumptions that could change the decision
+6. Draft a one-page memo for leadership
+
+Constraints:
+- Use conservative assumptions unless explicit numbers are provided
+- Call out lock-in risk separately from general vendor risk
+- Distinguish "core differentiator" from "commodity plumbing"
+
+---
+
+**Tips:**
+- Re-run this when pricing, latency, or compliance constraints change.
+- If the recommendation depends on one missing number, flag that number as the next research task.

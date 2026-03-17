@@ -128,3 +128,72 @@ For each dimension provide metric definition, current status, and target thresho
 **Tips:**
 - Pair output quality with cost and latency to avoid "high quality but unusable" outcomes.
 - Refresh rubrics monthly as use-cases evolve.
+
+---
+
+## Eval-to-KPI Bridge
+
+**Use case:** Connect AI eval scores to product metrics so teams do not optimize the model in isolation.
+**Input needed:** Current eval rubric, user workflow, product KPIs, failure modes, baseline usage data.
+
+---
+
+Help me connect AI quality metrics to product outcomes.
+
+Given the context, produce:
+1. A table with these columns:
+   - Eval dimension
+   - Why users care
+   - Product KPI it influences
+   - Leading indicator
+   - Guardrail metric
+2. The 3 eval dimensions most likely to move business outcomes
+3. Which eval dimensions are useful for debugging but not for executive reporting
+4. A weekly review template for PM + engineering
+5. A warning section called "How we could game this"
+
+Constraints:
+- Avoid vanity metrics such as raw model usage unless directly tied to value
+- Include at least one trust or quality guardrail
+- Use plain PM language, not ML jargon
+
+---
+
+**Tips:**
+- Use this when stakeholders ask why offline eval improvements are not yet visible in product KPIs.
+- Good AI PM reporting usually needs one quality metric, one behavior metric, and one business metric side by side.
+
+---
+
+## Pilot-to-Scale Readiness Scorecard
+
+**Use case:** Decide whether an AI feature is ready to move from pilot to broader rollout.
+**Input needed:** Pilot results, support tickets, quality scores, latency/cost data, user feedback, operational constraints.
+
+---
+
+Act as a product review lead. Assess whether this AI feature is ready to scale beyond a pilot.
+
+Return:
+1. A readiness scorecard with these categories:
+   - User value proof
+   - Quality consistency
+   - Trust and safety
+   - Operational readiness
+   - Unit economics
+   - Support burden
+2. Score each category red/yellow/green with evidence
+3. A go / conditional go / no-go recommendation
+4. The top 5 blockers to address before wider launch
+5. A founder-facing note that explains the decision in plain language
+
+Constraints:
+- Do not recommend scaling if trust or economics are red
+- Separate "needs more polish" from "not proven valuable"
+- Make the recommendation evidence-based, not optimistic
+
+---
+
+**Tips:**
+- Use this after every pilot wave so rollout decisions stay disciplined.
+- Pair it with a release gate from your eval process so teams do not argue from anecdotes.

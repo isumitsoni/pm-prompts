@@ -121,6 +121,41 @@ Then rank top 5 opportunities by impact vs effort.
 
 ---
 
+## AI Readiness Interview Planner
+
+**Use case:** Prepare discovery interviews that reveal whether a workflow is ready for AI assistance or still too ambiguous.
+**Input needed:** User segment, current workflow, known pain points, product idea, constraints.
+
+---
+
+You are my discovery research partner. I am exploring whether a workflow is a good fit for an AI feature.
+
+Using the context I provide, create an interview plan with:
+1. The 5 assumptions I need to validate first
+2. A 10-question interview guide ordered from warm-up to deep workflow questions
+3. 3 follow-up probes for moments when users give vague answers
+4. A section called "Signals the workflow is NOT ready for AI"
+5. A note-taking template with columns for:
+   - Current workflow
+   - Repetitive step
+   - Judgment-heavy step
+   - Trust concern
+   - Data availability
+   - Buying signal
+
+Constraints:
+- Keep questions non-leading
+- Focus on actual behavior, not opinions about AI in the abstract
+- Highlight where human review is likely to remain necessary
+
+---
+
+**Tips:**
+- Ask users to describe the last time they did the job, not what they think they would do.
+- Run this before writing specs so you do not design around imagined workflows.
+
+---
+
 ## Discovery-to-Decision Brief
 
 **Use case:** Create a decision-ready brief before planning and engineering sizing.
