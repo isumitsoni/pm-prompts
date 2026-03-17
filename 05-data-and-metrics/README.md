@@ -197,3 +197,40 @@ Constraints:
 **Tips:**
 - Use this after every pilot wave so rollout decisions stay disciplined.
 - Pair it with a release gate from your eval process so teams do not argue from anecdotes.
+
+---
+
+## AI Pilot Signal Triage
+
+**Use case:** Make sense of messy pilot feedback when usage, quality, and customer sentiment disagree.
+**Input needed:** Pilot metrics, customer notes, support tickets, output reviews, launch goals.
+
+---
+
+Help me triage this AI pilot.
+
+Return:
+1. A signal table with:
+   - Signal
+   - Type (usage / quality / sentiment / economics / support)
+   - What it suggests
+   - Confidence level
+2. A section called "real problem vs noise"
+3. The 3 most likely reasons the pilot is underperforming or overperforming
+4. The next 3 decisions I should make
+5. A recommendation:
+   - scale
+   - extend pilot
+   - narrow scope
+   - stop
+
+Constraints:
+- Do not confuse curiosity usage with durable product value
+- Call out when positive usage is hiding weak quality
+- If evidence is mixed, explain what additional data would reduce uncertainty
+
+---
+
+**Tips:**
+- This works best after the first 1-2 weeks of a pilot, not on day one.
+- Make sure at least one of the next decisions is about who to talk to, not only what to build.

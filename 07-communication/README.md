@@ -131,3 +131,75 @@ Tone: accountable, calm, transparent.
 **Tips:**
 - Never over-promise fixes you cannot ship quickly.
 - If unresolved, provide a clear update checkpoint date.
+
+---
+
+## Customer Incident Communication Draft
+
+**Use case:** Draft a customer-facing update when an AI feature fails, degrades, or behaves unpredictably.
+**Input needed:** Incident summary, affected users, what is true now, workaround if any, next update timing.
+
+---
+
+Draft a customer incident communication.
+
+Return:
+1. A short status-page version
+2. An email or in-app message version
+3. A support-team macro version
+
+Each version must include:
+- what happened
+- who is affected
+- what users should do now
+- what we are doing next
+- when users can expect the next update
+
+Tone:
+- calm
+- accountable
+- specific
+- no defensive language
+
+Do not:
+- over-explain root cause if still unclear
+- promise timing you cannot support
+- minimize customer impact
+
+---
+
+**Tips:**
+- If the incident affects trust, name that directly instead of only discussing uptime.
+- Give support a slightly more detailed version so they do not improvise.
+
+---
+
+## Executive Escalation Brief
+
+**Use case:** Escalate a product issue to leadership without turning it into a noisy status dump.
+**Input needed:** Issue summary, business impact, options, recommendation, blockers, decision needed.
+
+---
+
+Write a concise escalation brief for leadership.
+
+Use this structure:
+1. What happened
+2. Why it matters now
+3. Current impact
+4. Options considered
+5. Recommendation
+6. Decision needed from leadership
+7. What happens next if we do nothing for 7 days
+
+Rules:
+- Keep it under 400 words
+- Prioritize clarity over completeness
+- Separate facts from assumptions
+- Include one sentence on customer impact and one sentence on business risk
+
+---
+
+**Tips:**
+- A good escalation memo makes the decision obvious without sounding dramatic.
+- If you do not need a decision, you probably do not need an escalation brief.

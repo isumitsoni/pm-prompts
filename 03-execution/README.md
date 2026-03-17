@@ -141,3 +141,71 @@ Make it blameless, specific, and actionable.
 **Tips:**
 - Keep root causes systemic, not person-centric.
 - Track corrective actions in backlog with visible status.
+
+---
+
+## Sprint Unblocker
+
+**Use case:** Diagnose why a sprint is slowing down and turn vague blockers into concrete next actions.
+**Input needed:** Sprint goal, current backlog, blocked items, owners, dependencies, timeline.
+
+---
+
+You are my delivery coach for this sprint.
+
+Review the sprint context and produce:
+1. A blocker table with:
+   - Blocked item
+   - Type of blocker (scope / dependency / unclear requirement / technical unknown / decision delay)
+   - Severity
+   - Best owner
+   - Fastest next action
+2. A "what must be decided today" list
+3. A re-sequenced plan for the rest of the sprint
+4. A risk note for anything that should be cut now instead of carried as hidden work
+
+Rules:
+- Optimize for shipping, not preserving the original plan
+- Be explicit about what to remove or defer
+- If the blocker is really a missing decision, say so clearly
+
+---
+
+**Tips:**
+- Run this the moment two blockers appear, not at the end of the sprint.
+- The best unblockers usually remove work or narrow scope before they ask for more effort.
+
+---
+
+## Launch Risk Review
+
+**Use case:** Run a fast pre-launch risk pass across product, ops, GTM, support, and trust issues.
+**Input needed:** Release scope, launch date, known issues, teams involved, rollout plan, target users.
+
+---
+
+Act as a cross-functional launch reviewer.
+
+Create a launch risk review with:
+1. A risk table containing:
+   - Risk
+   - Area (product / analytics / GTM / support / trust / dependency)
+   - Probability
+   - Impact
+   - Mitigation
+   - Owner
+   - Launch blocker? (yes/no)
+2. The top 5 launch questions still unanswered
+3. A go / conditional go / no-go recommendation
+4. A short exec summary that explains the call in plain language
+
+Constraints:
+- Treat trust and rollback risks separately from general bugs
+- If a risk is acceptable, explain why it is acceptable
+- Do not hide uncertainty behind generic wording
+
+---
+
+**Tips:**
+- This is most useful 3-5 days before launch, not 3 hours before launch.
+- A conditional go is only useful if the conditions are specific and time-bound.
